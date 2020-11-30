@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Formulario</string>
+    <string-array name="estadocivilarray">
+        <item id="1">Solter@</item>
+        <item>Casad@</item>
+        <item>Viud@</item>
+        <item>Separad@</item>
+        <item>Otro</item>
+    </string-array>
+    <string name="nombreDefault">Introducir nombre</string>
+    <string name="edad">Seleccione su edad:</string>
+    <string name="genero">Seleccione su género:</string>
+    <string name="estadoCivil">Seleccione su estado civil:</string>
+    <string name="apellidosDefault">Introducir apellidos</string>
+    <string name="hijos">Hijos:</string>
+    <string name="borrar">Borrar</string>
+    <string name="listo">Listo</string>
+    <string name="hombreSoltero">hombre soltero</string>
+    <string name="hombreCasado">hombre casadao</string>
+    <string name="hombreSeparado">hombre separado</string>
+    <string name="hombreViudo">hombre viudo</string>
+    <string name="hombre">hombre</string>
+    <string name="mujer">mujer</string>
+    <string name="mujerSoltera">mujer soltera</string>
+    <string name="mujerCasada">mujer casada</string>
+    <string name="mujerSeparada">mujer separada</string>
+    <string name="mujerViuda">mujer viuda</string>
+    <string name="mayorEdad">mayor de edad</string>
+    <string name="menorEdad">menor de edad</string>
+    <string name="conHijos">con hijos</string>
+    <string name="sinHijos">sin hijos</string>
+    <string name="faltaNombre">Faltan campos por rellenar: nombre.</string>
+    <string name="faltaApellido">Faltan campos por rellenar: apellidos</string>
+    <string name="faltaEdad">Faltan campos por rellenar: edad válida.</string>
+    <string name="faltaNombreApellido">Faltan campos por rellenar: nombre y apellidos.</string>
+    <string name="faltaNombreApellidoEdad">Faltan campos por rellenar: nombre, apellidos y edad válida.</string>
+    <string name="faltaEdadApellido">Faltan campos por rellenar: apellidos y edad válida.</string>
+    <string name="faltaNombreEdad">Faltan campos por rellenar: nombre y edad válida.</string>
+
+
+
+</resources>
