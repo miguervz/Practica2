@@ -17,9 +17,9 @@
     <string name="hombreCasado">"homem casado "</string>
     <string name="hombreSeparado">"homem divorciado "</string>
     <string name="hombreViudo">viúvo</string>
-    <string name="hombre">Homen</string>
+    <string name="hombre">homen</string>
     <string name="mujerSoltera">"mulher solteira "</string>
-    <string name="mujer">Mulher</string>
+    <string name="mujer">mulher</string>
     <string name="mujerCasada">"mulher casada "</string>
     <string name="mujerSeparada">"mulher divorciada "</string>
     <string name="mujerViuda">viúva</string>
@@ -41,4 +41,8 @@
     <string name="Otro">Outro</string>
     <string name="si">Sim</string>
     <string name="no">Nao</string>
+    <string name="personaDivorciada">" pessoa divorciada"</string>
+    <string name="personaViuda">" pessoa viúva"</string>
+    <string name="personaSoltera">" pessoa solteira"</string>
+    <string name="personaCasda">" pessoa casada"</string>
 </resources>

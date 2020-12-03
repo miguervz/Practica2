@@ -53,6 +53,12 @@
     <string name="faltaNombreEdad">Faltan campos por rellenar: nombre y edad válida.</string>
     <string name="si">Si</string>
     <string name="no">No</string>
+    <string name="personaDivorciada">persona divorciada</string>
+    <string name="personaViuda">persona viuda</string>
+    <string name="personaSoltera">persona soltera</string>
+    <string name="personaCasda">persona casada</string>
+
+
 
 
 </resources>

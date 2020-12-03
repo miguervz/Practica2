@@ -135,28 +135,28 @@ btnIdiomas.setOnClickListener(this);
 
 
                         }
-                        else{ if (estadoCivilSpinner.equals("")) {
-                            sexoEstado ="solterx";
+                        else{
 
-                        }
-                            if (estadoCivilSpinner.equals("Casad@")) {
-                                sexoEstado ="casadx";
+                              if (spinner.getSelectedItemPosition()==0) {
+                               sexoEstado =getString(R.string.personaSoltera);
 
-                            }
-                            if (estadoCivilSpinner.equals("Separad@")) {
-                                sexoEstado ="separadx";
+                                  }
+                             else if (spinner.getSelectedItemPosition()==1) {
+                              sexoEstado =getString(R.string.personaCasda);
 
-                            }
-                            if (estadoCivilSpinner.equals("Viud@")) {
-                                sexoEstado ="viudx";
+                                }
+                             else   if (spinner.getSelectedItemPosition()==2) {
+                            sexoEstado =getString(R.string.personaDivorciada);
 
-                            }
-                            if (estadoCivilSpinner.equals("Otro")) {
-                                sexoEstado ="";
+                                 }
+                            else if (spinner.getSelectedItemPosition()==3) {
+                                sexoEstado =getString(R.string.personaViuda);
 
                             }
+                           else if (spinner.getSelectedItemPosition()==4) {
+                            sexoEstado ="";
 
-                        }
+                        }                          }
 
                         if(!edad1.getText().toString().equals("")){
                             i=Integer.parseInt(value);
@@ -262,6 +262,7 @@ btnIdiomas.setOnClickListener(this);
 
                 getResources().updateConfiguration(config, null);
                 Intent refresh = new Intent(MainActivity.this, MainActivity.class);
+                Locale.setDefault(traducir);
                 startActivity(refresh);
                 finish();
             }
