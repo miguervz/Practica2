@@ -14,9 +14,9 @@
         android:layout_marginStart="52dp"
         android:layout_marginLeft="52dp"
         android:layout_marginTop="452dp"
-        android:gravity="left"
+        android:gravity="start"
         android:text="@string/hijos"
-        android:textSize="16dp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,9 +27,9 @@
         android:layout_marginStart="52dp"
         android:layout_marginLeft="52dp"
         android:layout_marginTop="372dp"
-        android:gravity="left"
+        android:gravity="start"
         android:text="@string/estadoCivil"
-        android:textSize="16dp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -40,9 +40,9 @@
         android:layout_marginStart="52dp"
         android:layout_marginLeft="52dp"
         android:layout_marginTop="276dp"
-        android:gravity="left"
+        android:gravity="start"
         android:text="@string/genero"
-        android:textSize="16dp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -53,7 +53,7 @@
         android:layout_marginStart="52dp"
         android:layout_marginLeft="52dp"
         android:layout_marginTop="184dp"
-        android:gravity="left"
+        android:gravity="start"
         android:text="@string/edad"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,7 +69,7 @@
         android:layout_marginTop="168dp"
         android:ems="10"
         android:inputType="number"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -148,8 +148,8 @@
         android:layout_marginLeft="52dp"
         android:layout_marginTop="456dp"
         android:checked="false"
-        android:textOff="Si"
-        android:textOn="No"
+        android:textOff="@string/no"
+        android:textOn="@string/si"
         app:layout_constraintStart_toEndOf="@+id/Hijos"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -186,6 +186,17 @@
         android:layout_marginTop="512dp"
         android:background="@color/colorPrimary"
         android:text="@string/borrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonIdiomas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/buttonIdiomas"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

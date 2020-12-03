@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <string name="app_name">Formulario</string>
+    <string name="hijos">Children</string>
+    <string name="string_en">English</string>
+    <string name="string_p">Portuguese</string>
+    <string name="string_es">Spanish</string>
+    <string name="buttonIdiomas">Language</string>
+    <string name="nombreDefault">Name</string>
+    <string name="edad">Enter your age:</string>
+    <string name="genero">Enter your gender:</string>
+    <string name="estadoCivil">Enter your civil status:</string>
+    <string name="apellidosDefault">Surname</string>
+    <string name="borrar">Clear</string>
+    <string name="listo">Accept</string>
+    <string name="hombreSoltero">single man</string>
+    <string name="hombreCasado">married man</string>
+    <string name="hombreSeparado">divorced man</string>
+    <string name="hombreViudo">widow man</string>
+    <string name="hombre">Male</string>
+    <string name="si">Yes</string>
+    <string name="no">No</string>
+
+    <string name="mujer">Female</string>
+    <string name="mujerSoltera">single woman</string>
+    <string name="mujerCasada">married woman</string>
+    <string name="mujerSeparada">divorced woman</string>
+    <string name="mujerViuda">widow woman</string>
+    <string name="mayorEdad">over legal age</string>
+    <string name="menorEdad">under legal age</string>
+    <string name="conHijos">with children</string>
+    <string name="sinHijos">without children</string>
+    <string name="faltaNombre">Missing camps: name.</string>
+    <string name="faltaApellido">Missing camps: surname.</string>
+    <string name="faltaEdad">Missing camps: valid age.</string>
+    <string name="faltaNombreApellido">Missing camps: name and surname.</string>
+    <string name="faltaNombreApellidoEdad">Missing camps: name, surname and valid age.</string>
+    <string name="faltaEdadApellido">Missing camps: surname and valid age.</string>
+    <string name="faltaNombreEdad">Missing camps: name and valid age.</string>
+    <string name="soltero">Single</string>
+    <string name="casado">Married</string>
+    <string name="viudo">Widow</string>
+    <string name="separado">Divorced</string>
+    <string name="Otro">Other</string>
+</resources>

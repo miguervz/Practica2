@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Formato</string>
+    <string name="string_p">Português</string>
+    <string name="string_es">Espanhol</string>
+    <string name="string_en">Inglês</string>
+    <string name="buttonIdiomas">" Língua"</string>
+    <string name="nombreDefault">Nome</string>
+    <string name="edad">"Selecione sua idade "</string>
+    <string name="genero">"Selecione o seu sexo "</string>
+    <string name="estadoCivil">"Selecione seu estado civil "</string>
+    <string name="apellidosDefault">Sobrenome</string>
+    <string name="hijos">Filhos:</string>
+    <string name="borrar">"Excluir "</string>
+    <string name="listo">"Aceitar "</string>
+    <string name="hombreSoltero">"homem solteiro "</string>
+    <string name="hombreCasado">"homem casado "</string>
+    <string name="hombreSeparado">"homem divorciado "</string>
+    <string name="hombreViudo">viúvo</string>
+    <string name="hombre">Homen</string>
+    <string name="mujerSoltera">"mulher solteira "</string>
+    <string name="mujer">Mulher</string>
+    <string name="mujerCasada">"mulher casada "</string>
+    <string name="mujerSeparada">"mulher divorciada "</string>
+    <string name="mujerViuda">viúva</string>
+    <string name="mayorEdad">"maior de idade "</string>
+    <string name="menorEdad">"mais jovem "</string>
+    <string name="conHijos">"com filhos "</string>
+    <string name="sinHijos">sem filhos</string>
+    <string name="faltaNombre">Campos ausentes para preencher: nome.</string>
+    <string name="faltaApellido">Campos ausentes para preencher: sobrenome.</string>
+    <string name="faltaEdad">Campos ausentes para preencher:  idade válida.</string>
+    <string name="faltaNombreApellido">Campos ausentes para preencher: nome  e sobrenome.</string>
+    <string name="faltaNombreApellidoEdad">Campos ausentes para preencher: nome sobrenome e idade válida.</string>
+    <string name="faltaEdadApellido">Campos ausentes para preencher: sobrenome e idade válida.</string>
+    <string name="faltaNombreEdad">Campos ausentes para preencher: nome e idade válida.</string>
+    <string name="soltero">Solteiro</string>
+    <string name="casado">Casado</string>
+    <string name="viudo">Divorciado</string>
+    <string name="separado">Viúvo</string>
+    <string name="Otro">Outro</string>
+    <string name="si">Sim</string>
+    <string name="no">Nao</string>
+</resources>

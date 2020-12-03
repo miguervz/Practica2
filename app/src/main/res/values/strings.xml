@@ -1,12 +1,27 @@
 <resources>
     <string name="app_name">Formulario</string>
     <string-array name="estadocivilarray">
-        <item id="1">Solter@</item>
-        <item>Casad@</item>
-        <item>Viud@</item>
-        <item>Separad@</item>
-        <item>Otro</item>
+        <item >@string/soltero</item>
+        <item >@string/casado</item>
+        <item >@string/viudo</item>
+        <item >@string/separado</item>
+        <item >@string/Otro</item>
     </string-array>
+    <string name="soltero">Solter@</string>
+    <string name="casado">Casad@</string>
+    <string name="viudo">Viud@</string>
+    <string name="separado">Separad@</string>
+    <string name="Otro">Otro</string>
+    <string-array name="lenguajes">
+    <item>@string/string_es</item>
+        <item>@string/string_en</item>
+        <item>@string/string_p</item>
+</string-array>
+    <string name="string_en">Inglés</string>
+    <string name="string_p">Portugués</string>
+    <string name="string_es">Español</string>
+
+    <string name="buttonIdiomas">Idioma</string>
     <string name="nombreDefault">Introducir nombre</string>
     <string name="edad">Seleccione su edad:</string>
     <string name="genero">Seleccione su género:</string>
@@ -36,7 +51,8 @@
     <string name="faltaNombreApellidoEdad">Faltan campos por rellenar: nombre, apellidos y edad válida.</string>
     <string name="faltaEdadApellido">Faltan campos por rellenar: apellidos y edad válida.</string>
     <string name="faltaNombreEdad">Faltan campos por rellenar: nombre y edad válida.</string>
-
+    <string name="si">Si</string>
+    <string name="no">No</string>
 
 
 </resources>

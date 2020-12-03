@@ -1,11 +1,12 @@
 package com.example.practica2;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager2.widget.ViewPager2;
 
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.res.Resources;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,6 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Locale;
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener
 {
@@ -33,15 +35,20 @@ String sexoEstado;
 String mayordeEdad;
 String estadoCivilSpinner;
 String hijos;
+
 Switch switchHijos;
+    Configuration config= new Configuration();
+Button btnIdiomas;
+Locale traducir;
 
 
-
+    @SuppressLint("ResourceType")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+btnIdiomas= findViewById(R.id.buttonIdiomas);
+btnIdiomas.setOnClickListener(this);
         button = findViewById(R.id.button);
         button.setOnClickListener(this);
         button2 = findViewById(R.id.button2);
@@ -57,17 +64,17 @@ Switch switchHijos;
     public void onClick(View v)
             {
 
-                nombre1 = (EditText)findViewById(R.id.editTextTextNombre);
-                 apellido1 = (EditText)findViewById(R.id.editTextapellidos);
-                 edad1 = (EditText)findViewById(R.id.editTextEdad);
+                nombre1 = findViewById(R.id.editTextTextNombre);
+                 apellido1 = findViewById(R.id.editTextapellidos);
+                 edad1 = findViewById(R.id.editTextEdad);
                 value= edad1.getText().toString();
-                TextView etiqueta1 = (TextView)findViewById(R.id.etiqueta);
+                TextView etiqueta1 = findViewById(R.id.etiqueta);
 
-                RadioButton maleRadioButton = (RadioButton) findViewById(R.id.Hombre);
-                RadioButton femaleRadioButton = (RadioButton) findViewById(R.id.Mujer);
-                spinner = (Spinner) findViewById(R.id.desplegable);
+                RadioButton maleRadioButton =  findViewById(R.id.Hombre);
+                RadioButton femaleRadioButton =  findViewById(R.id.Mujer);
+                spinner =  findViewById(R.id.desplegable);
                 estadoCivilSpinner= (String) spinner.getSelectedItem();
-                switchHijos = (Switch) findViewById(R.id.switch1);
+                switchHijos =  findViewById(R.id.switch1);
                 switch (v.getId()) {
 
                     case R.id.button:
@@ -82,50 +89,72 @@ Switch switchHijos;
 
 
                         if (maleRadioButton.isChecked()) {
-                            if (estadoCivilSpinner.equals("Solter@")) {
+                            if (spinner.getSelectedItemPosition()==0) {
                                 sexoEstado =getString(R.string.hombreSoltero);
 
                             }
-                            if (estadoCivilSpinner.equals("Casad@")) {
+                           else if (spinner.getSelectedItemPosition()==1) {
                                 sexoEstado =getString(R.string.hombreCasado);
 
                             }
-                            if (estadoCivilSpinner.equals("Separad@")) {
+                       else   if (spinner.getSelectedItemPosition()==2) {
                                 sexoEstado =getString(R.string.hombreSeparado);
 
                             }
-                            if (estadoCivilSpinner.equals("Viud@")) {
+                           else if (spinner.getSelectedItemPosition()==3) {
                                 sexoEstado =getString(R.string.hombreViudo);
 
                             }
-                            if (estadoCivilSpinner.equals("Otro")) {
+                            else if (spinner.getSelectedItemPosition()==4){
                                 sexoEstado =getString(R.string.hombre);
 
                             }
 
                         }
                         else if(femaleRadioButton.isChecked()) {
-                            if (estadoCivilSpinner.equals("Solter@")) {
+                            if (spinner.getSelectedItemPosition()==0) {
                                 sexoEstado =getString(R.string.mujerSoltera);
 
                             }
-                            if (estadoCivilSpinner.equals("Casad@")) {
+                            else if (spinner.getSelectedItemPosition()==1) {
                                 sexoEstado =getString(R.string.mujerCasada);
 
                             }
-                            if (estadoCivilSpinner.equals("Separad@")) {
+                          else   if (spinner.getSelectedItemPosition()==2) {
                                 sexoEstado =getString(R.string.mujerSeparada);
 
                             }
-                            if (estadoCivilSpinner.equals("Viud@")) {
+                            else if (spinner.getSelectedItemPosition()==3) {
                                 sexoEstado =getString(R.string.mujerViuda);
 
                             }
-                            if (estadoCivilSpinner.equals("Otro")) {
+                           else if (spinner.getSelectedItemPosition()==4) {
                                 sexoEstado =getString(R.string.mujer);
 
                             }
 
+
+                        }
+                        else{ if (estadoCivilSpinner.equals("")) {
+                            sexoEstado ="solterx";
+
+                        }
+                            if (estadoCivilSpinner.equals("Casad@")) {
+                                sexoEstado ="casadx";
+
+                            }
+                            if (estadoCivilSpinner.equals("Separad@")) {
+                                sexoEstado ="separadx";
+
+                            }
+                            if (estadoCivilSpinner.equals("Viud@")) {
+                                sexoEstado ="viudx";
+
+                            }
+                            if (estadoCivilSpinner.equals("Otro")) {
+                                sexoEstado ="";
+
+                            }
 
                         }
 
@@ -192,7 +221,57 @@ Switch switchHijos;
                         break;
                 }
 
+                if (v.getId() == (R.id.buttonIdiomas))
+                {
+                    showDialog();
+                }
 
-        }}
+        }
+
+    private void showDialog()
+    {
+        AlertDialog.Builder b = new AlertDialog.Builder(this);
+        b.setTitle(getResources().getString(R.string.buttonIdiomas));
+
+        //obtiene los idiomas del array de string.xml
+        String[] types = getResources().getStringArray(R.array.lenguajes);
+        b.setItems(types, new DialogInterface.OnClickListener()
+        {
+            @Override
+            public void onClick(DialogInterface dialog, int which)
+            {
+                dialog.dismiss();
+                switch (which)
+                {
+
+                    case 0:
+                        traducir = new Locale("es");
+                        config.locale = traducir;
+                        break;
+                    case 1:
+                        traducir = new Locale("en");
+                        config.locale = traducir;
+
+                        break;
+                    case 2:
+                        traducir = new Locale("pt");
+                        config.locale = traducir;
+                        break;
+
+                }
+
+                getResources().updateConfiguration(config, null);
+                Intent refresh = new Intent(MainActivity.this, MainActivity.class);
+                startActivity(refresh);
+                finish();
+            }
+
+        });
+
+        b.show();
+
+    }
+
+}
 
 
